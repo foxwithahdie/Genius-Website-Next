@@ -17,7 +17,7 @@ export default function RootLayout({
       <body>
         <div className="flex min-h-screen w-full flex-col supports-dvh:min-h-dscreen">
           <header className="px-4 py-2 shadow shadow-neutral-300 drop-shadow">
-            <nav className="flex w-full items-center justify-between">
+            <nav className="flex w-full items-center justify-between z-10">
               <a href="/" className="font-futura text-sm font-medium">
                 GENIUS WITHIN
               </a>
@@ -38,8 +38,14 @@ export default function RootLayout({
             </nav>
           </header>
           <div className="flex grow flex-col bg-neutral-100">{children}</div>
-          {/* TODO: do we need a footer? it's not in the figma */}
-          <footer></footer>
+          {/* TODO: yes, we need a footer: we decided to add a footer because 
+                    its on the original iFp domain, personal choice since
+                    the figma was never finished */}
+          <footer className="relative bottom-0 h-32 w-full bg-gray-700 ">
+            <button className="bg-blue-300 "></button>
+            {/* TODO: footer content needs to be completely redesigned, still
+                      waiting on content in footer, need to work on tailwind knowledge */}
+          </footer>
         </div>
       </body>
     </html>
