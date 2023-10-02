@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+/* navbar styles */
+
+.genius-navbar {
+    width: 100%;
+    z-index: 1;
+    height: 2.5rem;
+    border-bottom: 2.5px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    padding: 1rem;
+
+}
+
+.genius-navbar-title {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+/* */
+
+/* footer styles */
+
+.genius-footer {
+    background-color: #323232;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.genius-footer-title {
+    color: white;
+    font-size: 1.5rem;  
+}
+
+.genius-footer-copyright {
+    color: white;
+    font-size: 1.2rem;    
+}
+
+.genius-footer-list {
+    margin: 0;
+    padding: 5px;
+}
+
+ul h4 {
+    color: #8a8989;
+    font-size: 1.2rem;
+}
+
+ul h4 i {
+    font-size: 0.9rem;
+}
+
+/* */
