@@ -1,19 +1,30 @@
 body {
     margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
     font-size: 20px;
     font-family: "Inter", sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    color: #404040;
 }
 
 /* navbar styles */
 
 .genius-navbar {
+    display: flex;
     width: 100%;
-    z-index: 1;
     height: 2.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     border-bottom: 2.5px solid #e5e5e5;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
     padding: 1rem;
-
 }
 
 .genius-navbar-title {
@@ -30,12 +41,14 @@ body {
 
 .genius-footer {
     display: flex;
+    width: 100%;
     background-color: #323232;
+    justify-content: center;
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 h3.genius-footer-title {
@@ -48,13 +61,21 @@ h3.genius-footer-title {
     color: white;
     font-size: 1rem;    
 }
+
 .genius-footer ul h4 {
     color: #8a8989;
     font-size: 1rem;
 }
 
+.genius-footer-address h4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .genius-footer ul h4 i {
-    font-size: 0.9rem;
+    width: 25rem;
+    display: block;
+    font-size: 1.1rem;
 }
 
 .genius-footer-info h4, .genius-footer-action h4 {
@@ -69,7 +90,7 @@ h3.genius-footer-title {
 
 .genius-footer-social {
     width: 15rem;
-    margin-left: 7rem;
+    margin-left: 12rem;
     text-align: center;
     color: white;
     display: flex;
@@ -79,14 +100,52 @@ h3.genius-footer-title {
 }
 
 .genius-footer-social button {
-    padding: 1rem;
-    width: 50%;
+    padding: 1.5rem;
+    width: 60%;
+    border-radius: 2px;
+    border: none;
 }
 .genius-footer-social a {
     text-decoration: none;
+    font-size: 1.1rem;
     color: black;
-    font-family: inherit;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 }
 
+
+/* */
+
+/* mobile layout styles */
+
+    /* mobile footer */
+
+    @media (max-width: 600px) {
+
+        .genius-footer {
+            width: 100%;
+            flex-direction: column;
+            padding: 1rem;
+        }
+        
+        .genius-footer ul {
+            padding: 0;
+            padding-left: 0.5rem;
+        }
+
+        .genius-footer-social {
+            margin-left: calc(50% - 8.75rem);
+            font-size: 0.8rem;
+            margin-bottom: 40px;
+        }
+
+        .genius-footer-social h1 {
+            margin-bottom: 40px;
+        }
+
+    }
+
+
+    /* */
 
 /* */

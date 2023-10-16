@@ -1,4 +1,4 @@
-import './globals.css'
+import 'css/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
@@ -10,11 +10,7 @@ export const metadata: Metadata = {
 	description: null,
 }
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode
-}) {
+export default function RootLayout({ children, }: { children: React.ReactNode }) {
 	return (
 <html lang="en">
     <Head>
@@ -27,7 +23,9 @@ export default function RootLayout({
 		<nav className="genius-navbar">
 			<h1 className="genius-navbar-title">GENIUS WITHIN</h1>
 		</nav>
-		<main>{ children }</main>
+		<main className="main-content">
+			{ children }
+		</main>
 		<footer className="genius-footer">
 			<ul className="genius-footer-address">
 				<h3 className="genius-footer-title">INNOVATORS FOR PURPOSE</h3>
@@ -61,10 +59,3 @@ export default function RootLayout({
   )
 }
 
-/* 
-
-TODO: Finish mobile footer
-TODO: Start media query
-TODO: Start index page
-
-*/
