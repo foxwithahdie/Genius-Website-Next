@@ -1,7 +1,7 @@
 import './globals.css'
 import './index.css'
 import Image from 'next/image'
-import geniusBanner from '../../public/Images/Homepage Images/Genius-Banner.png'
+import geniusBanner from '../public/Images/Homepage Images/Genius-Banner.png'
 
 export const metadata = {
     title: 'Genius Within',
