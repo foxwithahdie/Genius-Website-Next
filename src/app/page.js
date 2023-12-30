@@ -2,6 +2,10 @@ import './globals.css'
 import Image from 'next/image'
 import Layout from './layout'
 
+const testingStyle = {
+    fontSize: "100px",
+}
+
 export const metadata = {
     title: 'Genius Within',
     description: null,
