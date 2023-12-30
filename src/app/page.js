@@ -1,10 +1,7 @@
 import './globals.css'
+import './index.css'
 import Image from 'next/image'
-import Layout from './layout'
-
-const testingStyle = {
-    fontSize: "100px",
-}
+import geniusBanner from '../../public/Images/Homepage Images/Genius-Banner.png'
 
 export const metadata = {
     title: 'Genius Within',
@@ -13,6 +10,15 @@ export const metadata = {
 
 export default function Index() {
     return (
-            <h1 className="testing" style={testingStyle}>hi</h1>
+        <div className='title-box'>
+                <Image
+                src={geniusBanner}
+                alt='Geniuses displayed on a banner.'
+                className='genius-banner'
+                />
+            <div className='title'>
+                <h1>Unlocking the Innovator Inside</h1>
+            </div>
+        </div>
     )
 };

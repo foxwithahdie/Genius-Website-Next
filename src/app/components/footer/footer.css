@@ -1,13 +1,13 @@
 .genius-footer {
     display: flex;
     width: 100%;
+    position: relative;
+    bottom: 0;
     background-color: #323232;
     justify-content: center;
     padding: 1rem;
     padding-top: 4rem;
     padding-bottom: 5rem;
-    position: absolute;
-    bottom: 0px;
 }
 
 h3.genius-footer-title {
