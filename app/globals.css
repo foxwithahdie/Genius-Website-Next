@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    min-width: 100vw;
     font-size: 20px;
     color: #404040;
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-inter), sans-serif;
 }

@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 100px;
+    
+}
+
+.card-content {
+
+}
+
+.card-image {
+
+}
