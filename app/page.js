@@ -29,6 +29,15 @@ export default function Index() {
                 reverse={false}
                 image={GeniusGroupPhoto}
                 alt='A photo of the group that brought the Genius project to life.'
+                title='The Making of'
+                subtitle='The process behind the Genius Within installation'
+                 />
+                <PageCard 
+                reverse
+                image={AboutTheGeniuses}
+                alt='Symbols of the geniuses.'
+                title='About the Geniuses'
+                subtitle='Learn about the geniuses who brought the installation to life.'
                  />
             </main>
         </div>

@@ -1,14 +1,38 @@
 .card {
     display: flex;
     flex-direction: row-reverse;
-    margin: 100px;
-    
+    margin: 65px 150px 150px 150px;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.reverse {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-button {
+    width: 275px;
+    padding: 200px;
+    margin-top: 40px;
 }
 
 .card-content {
-
+    align-self: center;
+    margin-right: 75px;
 }
 
-.card-image {
+.card-content h3 {
+    font-weight: 400;
+    color: black;
+}
 
+.card-content h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+}
+
+.reverse .card-content {
+    margin-left: 35px;
 }

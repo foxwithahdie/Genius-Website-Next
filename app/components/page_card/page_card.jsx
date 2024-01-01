@@ -12,11 +12,11 @@ export default function PageCard(props) {
             className='card-image'
             />
             <div className='card-content'>
-                <Button 
+                <h1>{props.title}</h1>
+                <h3>{props.subtitle}</h3>
+                <Button
                 content='Learn More'
-                width={240}
-                marginLeft={100}
-                marginBottom={100}
+                className='card-button'
                 />
             </div>
         </div>
