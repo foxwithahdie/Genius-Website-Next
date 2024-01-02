@@ -1,0 +1,4 @@
+import { IoIosSearch } from "react-icons/io"; -> <IoIosSearch />: Search icon
+import { FaArrowRight } from "react-icons/fa6"; -> <FaArrowRight />: Right Arrow
+import { IoIosArrowBack } from "react-icons/io"; -> <IoIosArrowBack />: Left Cheveron
+import { IoIosArrowForward } from "react-icons/io"; -> <IoIosArrowForward />: Right Cheveron

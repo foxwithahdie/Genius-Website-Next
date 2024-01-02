@@ -1,0 +1,14 @@
+.button-styling {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    background: #6366F1;
+    border: none;
+    border-radius: 8px;
+    padding: 22px 12px 22px 12px;
+}
+
+

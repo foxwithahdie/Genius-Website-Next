@@ -1,0 +1,34 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlebox {
+    display: block;
+}
+
+.genius-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 900px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    background: linear-gradient(90deg, rgba(69,104,220,1) 0%, rgba(176,106,179,1) 64%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+}
+
+.pagebreak {
+    border-top: solid 1px #d4d4d4;
+    width: 80%;
+    align-self: center;
+    white-space: pre-line;
+}

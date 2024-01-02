@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-size: 20px;
+    color: #404040;
+    font-family: var(--font-inter), sans-serif;
+}
