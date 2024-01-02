@@ -9,7 +9,7 @@ import AboutTheGeniuses from '../public/Images/Homepage Images/About-the-Geniuse
 export const metadata = {
     title: 'Genius Within',
     description: null,
-  }
+}
 
 export default function Index() {
     return (
@@ -32,12 +32,13 @@ export default function Index() {
                 title='The Making of'
                 subtitle='The process behind the Genius Within installation'
                  />
+                <div class='pagebreak'></div>
                 <PageCard 
                 reverse
                 image={AboutTheGeniuses}
                 alt='Symbols of the geniuses.'
                 title='About the Geniuses'
-                subtitle='Learn about the geniuses who brought the installation to life.'
+                subtitle={`Learn about the geniuses who brought the \r\ninstallation to life.`}
                  />
             </main>
         </div>

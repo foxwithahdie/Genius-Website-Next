@@ -1,7 +1,7 @@
 .card {
     display: flex;
     flex-direction: row-reverse;
-    margin: 65px 150px 150px 150px;
+    margin: 55px 150px 150px 150px;
     justify-content: center;
     flex-wrap: wrap-reverse;
 }
@@ -9,11 +9,11 @@
 .reverse {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 145px;
 }
 
 .card-button {
     width: 275px;
-    padding: 200px;
     margin-top: 40px;
 }
 

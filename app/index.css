@@ -25,3 +25,10 @@
     background-clip: text;
     -webkit-text-stroke: 8px transparent;
 }
+
+.pagebreak {
+    border-top: solid 1px #d4d4d4;
+    width: 80%;
+    align-self: center;
+    white-space: pre-line;
+}
