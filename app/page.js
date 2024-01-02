@@ -1,15 +1,15 @@
-import './globals.css'
-import './index.css'
-import Image from 'next/image'
-import PageCard from './components/page_card/page_card'
-import geniusBanner from '../public/Images/Homepage Images/Genius-Banner.png'
-import GeniusGroupPhoto from '../public/Images/Homepage Images/Genius Group Photo.png'
-import AboutTheGeniuses from '../public/Images/Homepage Images/About-the-Geniuses.png'
+import './globals.css';
+import './index.css';
+import Image from 'next/image';
+import PageCard from './components/page_card/page_card';
+import geniusBanner from '../public/Images/Homepage Images/Genius-Banner.png';
+import GeniusGroupPhoto from '../public/Images/Homepage Images/Genius Group Photo.png';
+import AboutTheGeniuses from '../public/Images/Homepage Images/About-the-Geniuses.png';
 
 export const metadata = {
     title: 'Genius Within',
     description: null,
-}
+};
 
 export default function Index() {
     return (
