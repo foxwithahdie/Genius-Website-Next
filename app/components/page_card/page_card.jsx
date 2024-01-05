@@ -4,6 +4,7 @@ import Image from 'next/image'
 import NewLineText from '../../helper_functions'
 
 export default function PageCard(props) {
+    console.log(props.reference)
     let cardClassName = (props.reverse) ? 'card reverse' : 'card'
     return (
         <div className={cardClassName}>
@@ -17,6 +18,7 @@ export default function PageCard(props) {
                 <h3>{NewLineText(props.subtitle)}</h3>
                 <Button
                 content='Learn More'
+                reference={props.reference}
                 className='card-button'
                 />
             </div>

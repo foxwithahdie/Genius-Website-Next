@@ -31,6 +31,7 @@ export default function Index() {
                 alt='A photo of the group that brought the Genius project to life.'
                 title='The Making of'
                 subtitle='The process behind the Genius Within installation'
+                href='/'
                  />
                 <div class='pagebreak'></div>
                 <PageCard 
@@ -38,6 +39,7 @@ export default function Index() {
                 image={AboutTheGeniuses}
                 alt='Symbols of the geniuses.'
                 title='About the Geniuses'
+                reference='/geniuses'
                 subtitle={`Learn about the geniuses who brought the \r\ninstallation to life.`}
                  />
             </main>

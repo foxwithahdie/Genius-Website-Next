@@ -1,9 +1,11 @@
 import './button.css'
+import Link from 'next/link'
 
 export default function Button(props) {
+    console.log(props.reference)
     return (
-        <a href={props.ref} className={`button-styling ${props.className}`}>
+        <Link href={props.reference} className={`button-styling ${props.className}`}>
             {props.content}
-        </a>
+        </Link>
     )
 }
