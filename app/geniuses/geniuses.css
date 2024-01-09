@@ -1,0 +1,15 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagebreak {
+    border-top: solid 1px #d4d4d4;
+    width: 80%;
+    align-self: center;
+    white-space: pre-line;
+}
+
+.spacing {
+    margin-top: 200px;
+}
