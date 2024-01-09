@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import { inter } from './fonts';

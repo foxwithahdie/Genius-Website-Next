@@ -1,0 +1,31 @@
+.genius-card {
+    width: 20%;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.genius-card-content {
+    background: white / cover no-repeat;
+}
+
+.button-icon {
+    position: relative;
+    top: 3px;
+    left: 15px;
+}
+
+.genius-button {
+    width: 30%;
+    padding: 18px 8px 18px 8px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.genius-image {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

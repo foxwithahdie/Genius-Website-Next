@@ -8,5 +8,7 @@ This repository is created using Next.js, a React.js framework. React.js is a Ja
 
 This repository uses ESLint, Javascript, JSX (Javascript XML), and CSS.
 
-TODO: Start the Genius Card
-TODO: Start the Geniuses page
+TODO: Continue the Genius Card
+TODO: Work on Carousel logic
+TODO: Continue the Geniuses page
+TODO: Brainstorm animation

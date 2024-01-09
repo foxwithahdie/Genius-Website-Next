@@ -3,6 +3,7 @@ body {
     padding: 0;
     max-width: 100%;
     font-size: 20px;
+    background-color: #F5F5F5;
     color: #404040;
     font-family: var(--font-inter), sans-serif;
 }
