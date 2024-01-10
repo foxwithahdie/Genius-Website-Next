@@ -21,7 +21,6 @@ export default function GeniusCard(props) {
                     className='genius-button'
                 />
             </div>
-            
         </div>
     )
 }

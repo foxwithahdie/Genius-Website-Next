@@ -1,5 +1,6 @@
 import './footer.css'
 import { poppins } from '../../fonts'
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa"
 
 export default function Footer() {
     return (
