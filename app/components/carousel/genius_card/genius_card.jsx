@@ -12,8 +12,8 @@ export default function GeniusCard(props) {
                 className='genius-image'
             />
             <div className='genius-card-content'>
-                <h3>Spring 2023</h3>
-                <h2>Joy Buolamwini</h2>
+                <h3 className='genius-card-subtitle'>Spring 2023</h3>
+                <h2 className='genius-card-title'>{props.name}</h2>
                 <Button 
                     content='View'
                     icon={<FaArrowRight className='button-icon'/>}
@@ -21,6 +21,7 @@ export default function GeniusCard(props) {
                     className='genius-button'
                 />
             </div>
+            
         </div>
     )
 }
