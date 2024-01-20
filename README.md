@@ -10,7 +10,7 @@ This repository uses ESLint, Javascript, JSX (Javascript XML), and CSS.
 
 Todo List:
 
-TODO: Finishing touches on Genius Card
-TODO: Work on Carousel logic
-TODO: Continue the Geniuses page
+TODO: Work on Carousel logic + animation
+TODO: Start working on SSG for each Genius page
+TODO: Mobile Rework
 TODO: Brainstorm animation

@@ -9,6 +9,7 @@ export default function Geniuses() {
     return (
         <div>
             <main className='main-content'>
+                <h1 className='title'>About the Geniuses</h1>
                 <Carousel />
                 <div className='pagebreak'></div>
                 <PageCard 
