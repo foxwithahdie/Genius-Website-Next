@@ -1,9 +1,14 @@
 .carousel {
-    display: flex;
+    display: inline-flex;
     height: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 85px;
+}
+
+.carousel-page-button {
+    justify-content: flex-end;
+    flex: 0 0 81%
 }

@@ -1,0 +1,21 @@
+.page-button {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.forward-cheveron {
+    position: relative;
+    right: 10px;
+    top: 3px;
+}
+
+.backward-cheveron {
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+
+.page-button-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
