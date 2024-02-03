@@ -34,3 +34,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# webstorm
+
+.idea
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+*.iml
+
+# yaml / json
+
+pnpm-lock.yaml
+package.json
+
+
