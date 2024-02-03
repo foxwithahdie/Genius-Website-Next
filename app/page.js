@@ -2,7 +2,7 @@ import './globals.css';
 import './index.css';
 import Image from 'next/image';
 import PageCard from './components/page_card/page_card';
-import geniusBanner from '../public/images/homepage/banner.png';
+import GeniusBanner from '../public/images/homepage/banner.png';
 import GeniusGroupPhoto from '../public/images/homepage/group.png';
 import AboutTheGeniuses from '../public/images/homepage/about.png';
 
@@ -16,7 +16,7 @@ export default function Index() {
         <div>
             <div className='title-box'>
                 <Image
-                    src={geniusBanner}
+                    src={GeniusBanner}
                     alt='Geniuses displayed on a banner.'
                     className='genius-banner'
                 />
