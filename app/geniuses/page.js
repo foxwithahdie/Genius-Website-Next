@@ -10,7 +10,7 @@ export default function Geniuses() {
         <div>
             <main className='main-content'>
                 <h1 className='title'>About the Geniuses</h1>
-                <Carousel />
+                <Carousel six/>
                 <div className='pagebreak'></div>
                 <PageCard 
                     reverse={false}

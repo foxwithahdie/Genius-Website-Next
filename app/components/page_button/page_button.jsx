@@ -8,7 +8,10 @@ export default function PageButton(props) {
     return (
         <div className={`page-button ${props.className}`}>
             <p className='page-button-text'>
-                <IoIosArrowBack className='forward-cheveron'/>{pageNum} of {pageAmount}<IoIosArrowForward className='backward-cheveron'/>
+                <span className='forward-cheveron'><IoIosArrowBack /></span>
+                    {pageNum} of {pageAmount}
+                <span className='backward-cheveron'><IoIosArrowForward /></span>
+               
             </p>
         </div>
     )
