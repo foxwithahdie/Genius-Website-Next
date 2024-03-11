@@ -10,7 +10,7 @@ export default function Geniuses() {
         <div>
             <main className='main-content'>
                 <h1 className='title'>About the Geniuses</h1>
-                <Carousel three/>
+                <Carousel six/>
                 <div className='pagebreak'></div>
                 <PageCard 
                     reverse={false}
@@ -19,6 +19,7 @@ export default function Geniuses() {
                     title='The Making of'
                     subtitle='The process behind the Genius Within installation'
                     reference='/geniuses'
+                    key={0}
                 />
             </main>
         </div>

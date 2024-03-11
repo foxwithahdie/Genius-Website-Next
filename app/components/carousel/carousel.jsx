@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useTransition } from 'react'
+import { useState } from 'react'
 
 import './carousel.css'
 import GeniusCard from './genius_card/genius_card'
@@ -90,21 +90,16 @@ const images = [
 
 const geniusCardInfo = require('./genius_card_info.json')
 
-const objToComponent = (name, image, alt) => <GeniusCard name={name} image={image} alt={alt} className='single-card' />
+const objToComponent = (name, image, alt, key) => <GeniusCard name={name} image={image} alt={alt} key={key} className='single-card' />
 
-const moveLeft = (num) => num > 2 ? num - 1 : num
+let componentList = []
 
-const moveRight = (num) => num < 5 ? num + 1 : num
+for (let i = 0; i < Object.keys(geniusCardInfo).length; i++) {
+    let obj = geniusCardInfo[Object.keys(geniusCardInfo)[i]]
+    componentList.push(objToComponent(obj.name, images[i][0], obj.alt, i))
+}
 
 export default function Carousel(props) {
-    // useTransition
-
-    let componentList = []
-
-    for (let i = 0; i < Object.keys(geniusCardInfo).length; i++) {
-        let obj = geniusCardInfo[Object.keys(geniusCardInfo)[i]]
-        componentList.push(objToComponent(obj.name, images[i][0], obj.alt))
-    }
 
     let setsOfSix = []
     let setsOfThree = []
@@ -128,18 +123,38 @@ export default function Carousel(props) {
             currentIndex += indexUpdate
             setsOfThree.push(pushedList)
         }
-}
+    }
 
+    const [pageNumber, setPageNumber] = useState(1)
+
+    const numSetsOfCards = props.six ? 3 : 5
+    const [cards, setCards] = useState(props.six ? setsOfSix[0] : setsOfThree[0])
+    const pageNumBoundary = (item) => 1 < item <= numSetsOfCards
+    
+    function handleCarouselForward(setPageNumParams, setCardSet) {
+        setPageNumber(pageNumBoundary(setPageNumParams) ? setPageNumParams : pageNumber)
+        setCards(props.six ? setsOfSix[pageNumBoundary(setCardSet) ? setCardSet : setsOfSix.findIndex(cards)] 
+                            : setsofThree[pageNumBoundary(setCardSet) ? setCardSet : setsOfThree.findIndex(cards)])
+    }
+
+    function handleCarouselBackward(setPageNumParams, setCardSet) {
+        setPageNumber(pageNumBoundary(setPageNumParams) > 1 ? setPageNumParams : pageNumber)
+        setCards(props.six ? (setsOfSix[pageNumBoundary(setCardSet) ? setCardSet : setsOfSix.findIndex(cards)])
+                            : (setsofThree[pageNumBoundary(setCardSet) ? setCardSet : setsOfThree.findIndex(cards)]))
+    }
+    
     return (
-        <div className='carousel'>
+        <div className='carousel-set'>
             <PageButton 
-            pageNumber={1} 
-            pageAmount={props.six ? setsOfSix.length : setsOfThree.length}
-            className='carousel-page-button'
-            leftFunc={""}
-            rightFunc={""}
+                pageNumber={pageNumber}
+                pageAmount={numSetsOfCards}
+                className='carousel-page-button'
+                leftFunc={() => handleCarouselBackward(pageNumber - 1, pageNumber - 2)}
+                rightFunc={() => handleCarouselForward(pageNumber + 1, pageNumber)}
             />
-            {setsOfThree[0]}
+            <div className={`carousel`}>
+                {cards}
+            </div>
         </div>
     )
 }

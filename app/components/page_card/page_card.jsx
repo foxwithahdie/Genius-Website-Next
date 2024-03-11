@@ -3,7 +3,7 @@ import Button from '../button/button'
 import Image from 'next/image'
 import NewLineText from '../../helper_functions'
 
-export default function PageCard(props) {
+export default function PageCard(props, key) {
     let cardClassName = (props.reverse) ? 'card reverse' : 'card'
     return (
         <div className={cardClassName}>

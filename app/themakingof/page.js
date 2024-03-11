@@ -13,6 +13,7 @@ export default function TheMakingOf() {
                 title='About the Geniuses'
                 reference='/geniuses'
                 subtitle={`Learn about the geniuses who brought the \r\ninstallation to life.`}
+                key={1}
             />
         </div>
     )

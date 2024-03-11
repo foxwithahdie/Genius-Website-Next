@@ -3,7 +3,7 @@ import Button from '../../button/button'
 import Image from 'next/image'
 import { FaArrowRight } from "react-icons/fa6"
 
-export default function GeniusCard(props) {
+export default function GeniusCard(props, key) {
     return (
         <div className={`genius-card ${props.className}`}>
             <Image

@@ -32,6 +32,7 @@ export default function Index() {
                     title='The Making of'
                     subtitle='The process behind the Genius Within installation'
                     reference='/geniuses'
+                    key={0}
                 />
                 <div className='pagebreak'></div>
                 <PageCard 
@@ -41,6 +42,7 @@ export default function Index() {
                     title='About the Geniuses'
                     reference='/geniuses'
                     subtitle={`Learn about the geniuses who brought the \r\ninstallation to life.`}
+                    key={1}
                  />
             </main>
         </div>
